@@ -163,8 +163,8 @@ class MyClient(discord.Client):
                             AskU = "Username : " + message.author.name + " ::: Message : " + message.content
                 )
 
-            #Send output to channel.
-            await message.channel.send(Output)
+                #Send output to channel.
+                await message.channel.send(Output)
 
 #I don't know what this stuff does I think but it's fine I'll just assume?
 #I think this sets a variable to be the Discord default Intents.
