@@ -146,9 +146,9 @@ class MyClient(discord.Client):
             return
 
         #If the message is in the channel you want the bot to pay attention to. (If you want it to talk anywhere you can just remove this line then fix indents I think.).
-        if message.channel.Name == ChannelName:
+        if message.channel.name == ChannelName:
             #If the message starts with the character to ignore.
-            if message.startswith(IgnoreChar):
+            if message.content.startswith(IgnoreChar):
                 #Ignore.
                 pass
             #If it doesn't start with the character to ignore.
